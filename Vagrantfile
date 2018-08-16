@@ -25,17 +25,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "bootstrap.sh"
 
   config.vm.define :c7401 do |c7401|
-    c7401.vm.hostname = "c7401.ambari.apache.org"
+    c7401.vm.hostname = "c7401.hadoop.apache.org"
     c7401.vm.network :private_network, ip: "192.168.74.101"
   end
 
   config.vm.define :c7401 do |c7402|
-    c7401.vm.hostname = "c7402.ambari.apache.org"
+    c7401.vm.hostname = "c7402.hadoop.apache.org"
     c7401.vm.network :private_network, ip: "192.168.74.102"
   end
 
   config.vm.define :c7401 do |c7403|
-    c7401.vm.hostname = "c7403.ambari.apache.org"
+    c7401.vm.hostname = "c7403.hadoop.apache.org"
     c7401.vm.network :private_network, ip: "192.168.74.103"
   end
 
